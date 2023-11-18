@@ -1,113 +1,197 @@
-import Image from 'next/image'
-
+import Link from "next/link";
+import logo from "../public/logo.png";
+import Image from "next/image";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <div className="py-[90px] bg-[#159957]">
+        <h1 className=" leading-[70px] text-center text-white text-6xl font-bold py-26 space-y-2 tracking-tight">
+          Certified Web 3.0 and Metaverse Developer: A <br /> Nationwide Program
+          in Karachi, Lahore, Islamabad, and <br /> Peshawar
+        </h1>
+        <h2 className=" text-center py-8 text-white text-xl">
+          Getting Ready for the Next Generation and Future of the Internet -
+          Join a 13 Trillion Dollar Industry with 5 Billion Users
+        </h2>
+      </div>
+
+      <section className="flex flex-col items-center justify-center">
+        <div>
+          <div className="py-7 text-4xl">
+            <h1 className="text-[#159957]">
+              Certified Web 3.0 and Metaverse Developer: A <br /> Nationwide
+              Program in Karachi, Lahore, <br /> Islamabad, and Peshawar
+            </h1>
+          </div>
+          <div className="my-[20px]">
+            <Image src={logo} alt="logo" width="800" height="800" />
+          </div>
+          <div>
+            <h1 className="text-[#159957] text-4xl py-7">
+              Certified Web 3.0 and Metaverse Developer: A <br /> Nationwide
+              Program in Karachi, Lahore, <br /> Islamabad, and Peshawar
+            </h1>
+          </div>
+          <div>
+            <Link href="https://www.piaic.org/" target="_blank">
+              <h1 className="text-2xl py-7 text-[#1e6bb8] hover:underline">
+                Admissions Now Open in Karachi, Lahore, Islamabad, and Peshawar
+              </h1>
+            </Link>
+            <Link
+              href="https://docs.google.com/document/d/13Z4tMKQmZpMEsOc1Y_qAXbOstRolGIFupHxQFgAFl98/edit"
+              target="_blank"
+            >
+              <h1 className="text-xl py-3 text-[#1e6bb8] hover:underline">
+                This document on Google Docs
+              </h1>
+            </Link>
+          </div>
+          <div className="py-3">
+            <h1>
+              The internet is without a doubt the most important technological
+              development in human history.
+              <hr /> Web3 and metaverse technologies expand the internet as we
+              know it by introducing novel features <hr /> and advancements.
+              Metaverse will make use of all aspects of modern technology,
+              including 3D, VR,
+              <hr /> AR, AI, blockchain, cloud computing, voice computing,
+              ambient computing, and more.
+            </h1>
+          </div>
+          <div className="py-7">
+            <h1>
+              Citi is the latest Wall Street business to give a positive
+              prognosis for Web 3.0 and the Metaverse, <hr /> terms used to
+              depict a future internet vision centred on decentralised
+              technologies and virtual
+              <hr /> worlds. Citi stated in a March 2022 research paper that the
+              metaverse economy might have a total <hr /> addressable market of
+              up to $13 trillion and five billion people by 2030.
+            </h1>
+          </div>
+          <div>
+            <div>
+              <h1 className="text-[#159957] text-4xl py-7">
+                The Program in a Nutshell: Earn While You Learn
+              </h1>
+            </div>
+            <div className="py-2">
+              <h1>
+                In this brand-new type of curriculum, students will learn how to
+                make money and boost exports in <hr /> the classroom and will
+                begin doing so within six months of the program’s beginning. It
+                resembles a <hr /> cross between a corporate venture and an
+                educational project.
+              </h1>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h1 className="text-[#159957] text-4xl py-7">
+                Core Courses (Common in All Specializations)
+              </h1>
+            </div>
+            <div className="py-2">
+              <h1>
+                Every participant of the program will start by completing the
+                following two core courses
+              </h1>
+            </div>
+            <div className="py-2 text-[#1e6bb8]">
+              <Link
+                href="https://github.com/panaverse/panaverse.github.io#quarter-i-core"
+                target="_blank"
+              >
+                <h1>
+                  Quarter I (Core) CS-101: Object-Oriented Programming using
+                  TypeScript
+                </h1>
+              </Link>
+            </div>
+            <div className="py-2 text-[#1e6bb8]">
+              <Link
+                href="https://github.com/panaverse/panaverse.github.io#quarter-ii-core"
+                target="_blank"
+              >
+                <h1>
+                  Quarter II (Core) W2-201: Developing Planet-Scale Web 2.0
+                  Serverless Cloud Cloud Apps and APIs <hr /> using Next.js 13
+                  and Cloud Development Kit (CDK) for Terraform
+                </h1>
+              </Link>
+            </div>
+          </div>
+          <div>
+            <h1 className="text-[#159957] text-4xl py-7">Specialized Tracks</h1>
+          </div>
+          <div className="py-2">
+            <h1>
+              After completing the first two quarters the participants will
+              select one or more specializations <hr />
+              consisting of two courses each:
+            </h1>
+          </div>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <div>
+          <div>
+            <h1 className="text-[#159957] text-[2.1em] py-7">
+              Web 3.0 (Blockchain) and Metaverse Specialization
+            </h1>
+          </div>
+          <div className="py-2">
+            <h1>
+              This Web 3.0 and Metaverse specialization focuses on developing
+              full-stack Web 3.0 and Metaverse <hr /> experiences for the next
+              generation of the internet by specializing in building worlds that
+              merge the <hr /> best of cutting-edge decentralized distributed
+              blockchains with 3D metaverse client experiences.
+            </h1>
+          </div>
+          <div className="py-2 text-[#1e6bb8]">
+            <Link href="https://www.panaverse.co/" target="_blank">
+              <h1>
+                Quarter III W3-351: Developing Smart Contracts and Planet-Scale
+                Web 3.0 Dapps
+              </h1>
+            </Link>
+          </div>
+          <div className="py-2 text-[#1e6bb8] hover:underline">
+            <Link href="https://www.panaverse.co/" target="_blank">
+              <h1>
+                Quarter IV MV-361: Developing Planet-Scale Open Virtual and
+                Augmented Metaverse Experiences
+              </h1>
+            </Link>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h1 className="text-[#159957] text-3xl py-7">
+              Artificial Intelligence (AI) and Deep Learning Specialization
+            </h1>
+          </div>
+          <div className="py-2">
+            <h1>
+            The AI and Deep Learning specialization focuses on building and deploying intelligent APIs using <hr /> OpenAI models and building custom Deep Learning Tensorflow models.
+            </h1>
+          </div>
+          <div className="py-2 text-[#1e6bb8]">
+            <Link href="https://www.panaverse.co/" target="_blank">
+              <h1>
+              Quarter III AI-351: Developing Planet-Scale Intelligent APIs and Python Programming
+              </h1>
+            </Link>
+          </div>
+          <div className="py-2 text-[#1e6bb8] hover:underline">
+            <Link href="https://www.panaverse.co/" target="_blank">
+              <h1>
+              Quarter IV AI-361: Deep Learning and MLOps
+              </h1>
+            </Link>
+          </div>
+        </div>
+      </section>
     </main>
-  )
+  );
 }
